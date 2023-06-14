@@ -3,4 +3,7 @@ project(SPA_graphs)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(SPA_graphs main.cpp)
+add_library(STATIC
+        algorithms.cpp)
+
+add_executable(SPA_graphs main.cpp graph.cpp static/enum.cpp)
